@@ -79,6 +79,16 @@ nav a:link {
     center/cover;
 }
 
+.error {
+  height: 70vh;
+  margin: 0 5rem;
+  font-size: 120%;
+  background-color: #141414;
+  border: 2px solid #222222;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  background: url(../img/404.png) no-repeat center center/cover;
+}
+
 /**/
 .main-container {
   display: flex;
