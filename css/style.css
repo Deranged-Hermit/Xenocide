@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font: normal normal 1.2rem Arial, Tahoma, Helvetica, FreeSans, sans-serif;
   color: #fff;
   background: #000 url(../img/full-background.png) repeat scroll top left;
 }
 
+/*Make a text shadow class?*/
 h1 {
   color: #44d62c;
   text-shadow: 2px 2px 4px #000000;
@@ -15,15 +21,11 @@ h2 {
 }
 
 h3 {
-  color: #f9f9f9;
+  color: #909090;
   text-shadow: 2px 2px 4px #000000;
 }
 
-a:link {
-  text-decoration: none;
-  color: #fff;
-}
-
+a:link,
 a:visited {
   text-decoration: none;
   color: #fff;
@@ -57,17 +59,18 @@ nav a:link {
   text-align: center;
 }
 
-#active {
+#active,
+#span {
   color: #44d62c;
 }
 
+/*Nav Logo*/
 .logo-sm {
   transform: scale(0.5);
   margin: -3rem;
 }
 
 /* Showcase */
-
 .showcase {
   height: 70vh;
   margin: 0 5rem;
@@ -79,6 +82,7 @@ nav a:link {
     center/cover;
 }
 
+/*404 Error Main (Could combine .showcase and error with two classes just for img path) Will also need a 404 for smaller screens*/
 .error {
   height: 70vh;
   margin: 0 5rem;
@@ -89,13 +93,14 @@ nav a:link {
   background: url(../img/404.png) no-repeat center center/cover;
 }
 
-/**/
+/*Class To Center .main*/
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/*Main Area Where Articles Are Displayed*/
 main {
   max-width: 1080px;
   background-color: rgba(25, 25, 25, 0.7);
@@ -107,11 +112,25 @@ main {
   line-height: 1.6;
 }
 
+/*Class to Center Form Title*/
+.form-title-center {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+/*Img that are contained in the rules page. May want to rename.*/
 .rules-img {
   float: right;
   margin: -1.5rem;
 }
 
+.rules-img-left {
+  float: left;
+  transform: scale(1.5);
+}
+
+/*Form nav*/
 .app-tab {
   display: inline-block;
   text-align: center;
@@ -129,8 +148,23 @@ main {
   text-align: center;
 }
 
+/*Background containers for forms*/
+.form-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-main {
+  background: #000 url(../img/full-background.png);
+  border: 3px solid #000;
+  padding: 2rem;
+  margin: 2rem;
+}
+
 .item-tab {
   background-color: #101010;
+  border-radius: 15px;
   padding: 0.7rem 2rem;
   justify-content: center;
 }
