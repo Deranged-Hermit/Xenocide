@@ -11,7 +11,7 @@ Nav
 
 Footer
     Add a footer?
-    Best place to put social media icons
+    Best place to put social media icons -Jack, "Maybe have them floating on the bottom as a small footer bar."
 
 Home Page
     Upcoming events needs less padding or margin
