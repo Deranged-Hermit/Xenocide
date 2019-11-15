@@ -1,6 +1,13 @@
+CSS
+    Validate
+    Clean up class names and try to reorginize with better notes
+
 Logo
     Add some shadow
-    moce the rest of the word up
+    Move the rest of the word up
+
+Nav
+    Not sure if we need log in
 
 Footer
     Add a footer?
@@ -12,6 +19,8 @@ Home Page
     N'Zoth eyes follow the mouse and blink
     JS DOM to post event specifics on N'Zoth
     Need upcoming event art
+    Instead of upcoming events on the bottom it could be selected at random on a timer to display messege accross N'Zoth
+    Maybe old god voice randomly
 
 Streams
     Need to figure out why the last stream has the caption below instead of above
@@ -32,5 +41,6 @@ Rules
     Need break points for mobile, tablets and small screens
     Need small version of 404 for mobile
     Test hamberger menu
+
 
 
