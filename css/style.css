@@ -162,6 +162,10 @@ main {
   margin: 2rem;
 }
 
+.form-p {
+  color: #fff;
+}
+
 .item-tab {
   background-color: #101010;
   border-radius: 15px;
