@@ -30,6 +30,7 @@
                 </li>
                 <li><a href="#" id="active">Apply</a></li>
                 <li><a href="rules.html">Rules</a></li>
+                <li><a href="#" class="btn btn-log-in">Log In</a></li>
               </ul>
             </div>
           </div>
@@ -37,111 +38,165 @@
       </div>
     </nav>
 
-    <main>
-      <ul class="app-tab">
-        <li class="item-tab">Join</li>
-        <li class="item-tab">Member</li>
-        <li class="item-tab">Officer</li>
-        <li class="item-tab">Raiding</li>
-        <li class="item-tab">PvP</li>
-      </ul>
+    <div class="main-container">
+      <main>
+        <ul class="app-tab">
+          <li class="item-tab">Join</li>
+          <li class="item-tab">Member</li>
+          <li class="item-tab">Officer</li>
+          <li class="item-tab">M+</li>
+          <li class="item-tab">Raiding</li>
+          <li class="item-tab">PvP</li>
+        </ul>
 
-      <div class="tab-1">
-        <h2>Join the Guild Request</h2>
-        <div class="form-main">
-          <label for="">Character Name:</label>
-          <input type="text" name="firstname" /><br />
+        <div class="tab-1">
+          <h2>Join the Guild Request</h2>
+          <div class="form-main">
+            <label for="">Character Name:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Character Class:</label>
-          <input type="text" name="firstname" /><br />
+            <label for="">Character Class:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Character Item Level:</label>
-          <input type="text" name="firstname" /><br />
+            <label for="">Character Item Level:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Why do you want to join xenocide?</label><br />
-          <textarea name="" id="" cols="30" rows="10"></textarea><br />
-          <input type="submit" />
+            <label for="">Why do you want to join xenocide?</label><br />
+            <textarea name="" id="" cols="30" rows="10"></textarea><br />
+            <input type="submit" class="btn" />
+          </div>
         </div>
-      </div>
 
-      <div class="tab-2">
-        <h2>Member Application</h2>
-        <div class="form-main">
-          <label for="">Character Name:</label>
-          <input type="text" name="firstname" /><br />
+        <div class="tab-2">
+          <h2>Member Application</h2>
+          <div class="form-main">
+            <p>
+              Any intiate can become a member as long as they have been with the
+              guild for at least 30 days and agree to the guild rules.
+            </p>
+            <label for="">Character Name:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Have You Read and Accepted the Rules</label><br />
-          <label for="">Yes</label> <input type="radio" />
-          <label for="">No</label><input type="radio" /><br />
+            <label for="">Have You Been A Memeber For At Least 30 Days?</label
+            ><br />
+            <label for="">Yes</label> <input type="radio" />
+            <label for="">No</label><input type="radio" /><br />
 
-          <input type="submit" />
+            <label for="">Have You Read and Accepted the Rules</label><br />
+            <label for="">Yes</label> <input type="radio" />
+            <label for="">No</label><input type="radio" /><br />
+
+            <input type="submit" class="btn" />
+          </div>
         </div>
-      </div>
 
-      <div class="tab-3">
-        <h2>Officer Application</h2>
-        <div class="form-main">
-          <p></p>
-          <label for="">Character Name:</label>
-          <input type="text" name="firstname" /><br />
+        <div class="tab-3">
+          <h2>Officer Application</h2>
+          <div class="form-main">
+            <p>
+              Officers are appointed based upon experience, ability, and
+              trustworthiness over time. While officers have authority over
+              other guild members, they are not "superior" to other members and
+              should not be considered as such. Officers are subject to the same
+              rules as other members. This position is increased responsibility
+              with no tangable rewards.
+            </p>
+            <label for="">Character Name:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Have You Been A Memeber For At Least Six Months?</label
-          ><br />
-          <label for="">Yes</label> <input type="radio" />
-          <label for="">No</label><input type="radio" /><br />
+            <label for=""
+              >Have You Been A Memeber For At Least Six Months?</label
+            ><br />
+            <label for="">Yes</label> <input type="radio" />
+            <label for="">No</label><input type="radio" /><br />
 
-          <label for="">Why Do You Want To Become An Officer?</label><br />
-          <textarea name="" id="" cols="30" rows="10"></textarea><br />
+            <label for="">Why Do You Want To Become An Officer?</label><br />
+            <textarea name="" id="" cols="30" rows="10"></textarea><br />
 
-          <label for="">What can You Provide To The Guild As An Officer?</label
-          ><br />
-          <textarea name="" id="" cols="30" rows="10"></textarea><br />
+            <label for=""
+              >What can You Provide To The Guild As An Officer?</label
+            ><br />
+            <textarea name="" id="" cols="30" rows="10"></textarea><br />
 
-          <label for="">Explain Any Leadership Positions You have Held</label
-          ><br />
-          <textarea name="" id="" cols="30" rows="10"></textarea><br />
+            <label for="">Explain Any Leadership Positions You have Held</label
+            ><br />
+            <textarea name="" id="" cols="30" rows="10"></textarea><br />
 
-          <input type="submit" />
+            <input type="submit" class="btn" />
+          </div>
         </div>
-      </div>
 
-      <div class="tab-4">
-        <h2>Raiding Application</h2>
-        <div class="form-main">
-          <label for="">Character Name:</label>
-          <input type="text" name="firstname" /><br />
+        <div class="tab-4">
+          <h2>Mythic+ Team Application</h2>
+          <div class="form-main">
+            <p>
+              There are several M+ teams and each has its own rules and goals.
+            </p>
+            <p>Murder Hobos: This is the progression M+ team.</p>
+            <label for="">Character Name:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Character Class:</label>
-          <input type="text" name="firstname" /><br />
+            <label for="">Character Class:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Character Item Level:</label>
-          <input type="text" name="firstname" /><br />
+            <label for="">Character Item Level:</label>
+            <input type="number" name="firstname" /><br />
 
-          <label for="">Highest Difficulty raided?</label><br />
-          <label for="">LFR</label> <input type="radio" />
-          <label for="">Normal</label><input type="radio" />
-          <label for="">Heroic</label><input type="radio" />
-          <label for="">Mythic</label><input type="radio" /><br />
+            <label for="">What Team Are You Looking To Join?</label><br />
+            <label for="">Murder Hobos</label> <input type="radio" />
+            <label for="">Udder Madness</label><input type="radio" />
 
-          <input type="submit" />
+            <label for="">Raider IO Link</label><br />
+            <textarea name="" id="" cols="30" rows="10"></textarea><br />
+
+            <input type="submit" class="btn" />
+          </div>
         </div>
-      </div>
 
-      <div class="tab-5">
-        <h2>Rated PvP Application</h2>
-        <div class="form-main">
-          <label for="">Character Name:</label>
-          <input type="text" name="firstname" /><br />
+        <div class="tab-5">
+          <h2>Raiding Application</h2>
+          <div class="form-main">
+            <label for="">Character Name:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Character Class:</label>
-          <input type="text" name="firstname" /><br />
+            <label for="">Character Class:</label>
+            <input type="text" name="firstname" /><br />
 
-          <label for="">Character Item Level:</label>
-          <input type="text" name="firstname" /><br />
+            <label for="">Character Item Level:</label>
+            <input type="number" name="firstname" /><br />
 
-          <input type="submit" />
+            <label for="">Highest Difficulty raided?</label><br />
+            <label for="">LFR</label> <input type="radio" />
+            <label for="">Normal</label><input type="radio" />
+            <label for="">Heroic</label><input type="radio" />
+            <label for="">Mythic</label><input type="radio" /><br />
+
+            <label for="">What Difficuty Are You Looking To Do?</label><br />
+            <label for="">LFR</label> <input type="radio" />
+            <label for="">Normal</label><input type="radio" />
+            <label for="">Heroic</label><input type="radio" />
+            <label for="">Mythic</label><input type="radio" /><br />
+
+            <input type="submit" class="btn" />
+          </div>
         </div>
-      </div>
-    </main>
+
+        <div class="tab-6">
+          <h2>Rated PvP Application</h2>
+          <div class="form-main">
+            <label for="">Character Name:</label>
+            <input type="text" name="firstname" /><br />
+
+            <label for="">Character Class:</label>
+            <input type="text" name="firstname" /><br />
+
+            <label for="">Character Item Level:</label>
+            <input type="number" name="firstname" /><br />
+
+            <input type="submit" class="btn" />
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

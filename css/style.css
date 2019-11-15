@@ -4,8 +4,18 @@ body {
   background: #000 url(../img/full-background.png) repeat scroll top left;
 }
 
+h1 {
+  color: #44d62c;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 h2 {
   color: #44d62c;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+  color: #f9f9f9;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -24,6 +34,9 @@ a:hover {
   color: #44d62c;
   transform: scale(1.1);
   transition: 0.5s;
+}
+
+.btn-log-in {
 }
 
 /* Nav */
@@ -91,6 +104,41 @@ main {
   margin: -1.5rem;
 }
 
+.btn {
+  border: 3px solid #44d62c;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+  color: #44d62c;
+}
+
+label {
+  color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: #141414;
+  color: #999;
+  border: 1px solid #44d62c;
+  height: 1.3rem;
+  margin: 1rem;
+}
+
+textarea {
+  background-color: #141414;
+  color: #999;
+  font-size: 16px;
+  border: 1px solid #44d62c;
+  height: 5rem;
+  margin: 1rem;
+}
+
 @media (max-width: 460px) {
   main {
     max-width: 90vw;
@@ -107,14 +155,14 @@ main {
   .menu-wrap {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 1;
   }
 
   .menu-wrap .toggler {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 2;
     cursor: pointer;
     width: 50px;
@@ -125,7 +173,7 @@ main {
   .menu-wrap .hamburger {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 1;
     width: 40px;
     height: 60px;
