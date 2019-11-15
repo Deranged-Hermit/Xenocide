@@ -32,8 +32,6 @@ a:visited {
 a:hover {
   text-decoration: none;
   color: #44d62c;
-  transform: scale(1.1);
-  transition: 0.5s;
 }
 
 .btn-log-in {
@@ -102,6 +100,29 @@ main {
 .rules-img {
   float: right;
   margin: -1.5rem;
+}
+
+.app-tab {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+}
+
+.app-tab li {
+  display: inline;
+}
+
+.app-tab a:link {
+  display: inline-block;
+  padding: 1rem;
+  height: 1rem;
+  text-align: center;
+}
+
+.item-tab {
+  background-color: #101010;
+  padding: 0.7rem 2rem;
+  justify-content: center;
 }
 
 .btn {
