@@ -1,0 +1,36 @@
+Logo
+    Add some shadow
+    moce the rest of the word up
+
+Footer
+    Add a footer?
+    Best place to put social media icons
+
+Home Page
+    Upcoming events needs less padding or margin
+    image p needs to be centered and on the bottom
+    N'Zoth eyes follow the mouse and blink
+    JS DOM to post event specifics on N'Zoth
+    Need upcoming event art
+
+Streams
+    Need to figure out why the last stream has the caption below instead of above
+    Need JS DOM to change main twitch channel to one chosen
+    Need to fix background color
+
+Apply
+    JS DOM to change forms when button is selected
+    Add email to forms
+
+Rules
+    List decoration should be green diamonds
+    Change font to white
+    Add another image
+    Finish copy and proof
+
+@media
+    Need break points for mobile, tablets and small screens
+    Need small version of 404 for mobile
+    Test hamberger menu
+
+
