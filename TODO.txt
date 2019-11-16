@@ -23,8 +23,12 @@ Streams
     Need to fix background color
 
 Apply
-    JS DOM to change forms when button is selected
-    Add email to forms
+    Each form is its own link
+    needed nested nav
+    and build rest of the pages
+    in its own apply folder
+    sanatize input so no tags
+    valadates and sends to email xenocide.us@gmail.com pw 100shampine001
 
 Rules
     List decoration should be green diamonds
