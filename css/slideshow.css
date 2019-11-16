@@ -13,12 +13,9 @@ body {
 
   top: 65vh;
 
-  /*This part needs to be responsive*/
   transform: translate(-50%, -50%);
 
-  align-items: center;
-
-  animation-duration: 40s;
+  animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
