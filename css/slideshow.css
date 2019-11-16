@@ -2,6 +2,11 @@ body {
   overflow-x: hidden;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .slide-1,
 .slide-2,
 .slide-3 {
