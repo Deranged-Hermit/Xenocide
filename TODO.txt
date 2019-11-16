@@ -14,12 +14,7 @@ Footer
     Best place to put social media icons -Jack, "Maybe have them floating on the bottom as a small footer bar."
 
 Home Page
-    Upcoming events needs less padding or margin
-    image p needs to be centered and on the bottom
     N'Zoth eyes follow the mouse and blink
-    JS DOM to post event specifics on N'Zoth
-    Need upcoming event art
-    Instead of upcoming events on the bottom it could be selected at random on a timer to display messege accross N'Zoth
     Maybe old god voice randomly
 
 Streams
