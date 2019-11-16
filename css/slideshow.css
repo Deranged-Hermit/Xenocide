@@ -1,17 +1,22 @@
 body {
-  overflow-x: hidden; /* Hide scrollbars */
+  overflow-x: hidden;
 }
 
 .slide-1,
 .slide-2,
 .slide-3 {
+  margin: 0;
+  padding: 0;
+
   position: absolute;
   display: block;
 
-  top: 60vh;
-  width: 50%;
+  top: 65vh;
 
-  transform: translate(-10%, 50%);
+  /*This part needs to be responsive*/
+  transform: translate(-50%, -50%);
+
+  align-items: center;
 
   animation-duration: 40s;
   animation-timing-function: ease-in-out;
