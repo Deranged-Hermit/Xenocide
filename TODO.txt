@@ -12,6 +12,7 @@ Nav
 Footer
     Add a footer?
     Best place to put social media icons -Jack, "Maybe have them floating on the bottom as a small footer bar."
+    Yeah would be a good place for contact as well
 
 Home Page
     N'Zoth eyes follow the mouse and blink
