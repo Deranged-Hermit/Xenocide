@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slideshow.css" />
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
     crossorigin="anonymous"/>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <title>Xenocide - A Bleeding Hollow Guild</title>
+    <title>Xenocide - Under Construction</title>
   </head>
   <body>
-
+    
       <div class="logo-sm">
           <img src="./img/logo-sm.png" alt="Logo" />
         </div>
@@ -24,7 +25,7 @@
               <li ><a href="index.html">News</a></li>
   
               <!-- Start Streams -->
-              <li><a href="#" id="active">Streams</a></li>
+              <li><a href="streams.html">Streams</a></li>
             
               <!-- Start Progress -->
             <li>
@@ -96,113 +97,26 @@
         </nav>
         <!-- End Navigation Bar -->
 
-    <div class="main-container">
-      <div class="iframe-main-container">
-        <div id="twitch-embed"></div>
-
-        <main>
-          <div class="iframe-sm-container left">
-            <h2>M2GTV</h2>
-            <a href="">Twitch.TV/m2gtv</a>
-            <div id="twitch-embed-sm-1"></div>
+        <div class="showcase">
+            <div class="slide-1">
+              <h1 class="center">Under Construction</h1>
+              <br />
+              <p class="center"></p>
+            </div>
+      
+            <div class="slide-2">
+              <h1 class="center">Under Construction</h1>
+              <br />
+              <p class="center"></p>
+            </div>
+      
+            <div class="slide-3">
+              <h1 class="center">Under Construction</h1>
+              <br />
+              <p class="center"></p>
+            </div>
           </div>
-
-          <div class="iframe-sm-container">
-            <h2>Ragnok</h2>
-            <a href="">Twitch.TV/Ragnok_Bleedinghollow</a>
-            <div id="twitch-embed-sm-2"></div>
-          </div>
-
-          <div class="iframe-sm-container">
-            <h2>Ragnok</h2>
-            <a href="">Twitch.TV/Ragnok_Bleedinghollow</a>
-            <div id="twitch-embed-sm-3"></div>
-          </div>
-
-          <div class="iframe-sm-container">
-            <h2>Ragnok</h2>
-            <a href="">Twitch.TV/Ragnok_Bleedinghollow</a>
-            <div id="twitch-embed-sm-4"></div>
-          </div>
-        </main>
-      </div>
-
-      <script src="https://embed.twitch.tv/embed/v1.js"></script>
-      <script type="text/javascript">
-        new Twitch.Embed("twitch-embed", {
-          width: 1080,
-          height: 610,
-          channel: "m2gtv",
-          layout: "video",
-          autoplay: false
-        });
-        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-          var player = embed.getPlayer();
-          player.play();
-        });
-      </script>
-
-      <div class="iframe-sm-container">
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-        <script type="text/javascript">
-          new Twitch.Embed("twitch-embed-sm-1", {
-            width: 450,
-            height: 260,
-            channel: "m2gtv",
-            layout: "video",
-            autoplay: false
-          });
-          embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-            var player = embed.getPlayer();
-            player.play();
-          });
-        </script>
-      </div>
-
-      <script src="https://embed.twitch.tv/embed/v1.js"></script>
-      <script type="text/javascript">
-        new Twitch.Embed("twitch-embed-sm-2", {
-          width: 450,
-          height: 260,
-          channel: "ragnok_bleedinghollow",
-          layout: "video",
-          autoplay: false
-        });
-        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-          var player = embed.getPlayer();
-          player.play();
-        });
-      </script>
-
-      <script src="https://embed.twitch.tv/embed/v1.js"></script>
-      <script type="text/javascript">
-        new Twitch.Embed("twitch-embed-sm-3", {
-          width: 450,
-          height: 260,
-          channel: "ragnok_bleedinghollow",
-          layout: "video",
-          autoplay: false
-        });
-        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-          var player = embed.getPlayer();
-          player.play();
-        });
-      </script>
-
-      <script src="https://embed.twitch.tv/embed/v1.js"></script>
-      <script type="text/javascript">
-        new Twitch.Embed("twitch-embed-sm-3", {
-          width: 450,
-          height: 260,
-          channel: "ragnok_bleedinghollow",
-          layout: "video",
-          autoplay: false
-        });
-        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-          var player = embed.getPlayer();
-          player.play();
-        });
-      </script>
-    </div>
+      
+            
   </body>
 </html>
