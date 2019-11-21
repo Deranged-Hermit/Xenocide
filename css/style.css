@@ -36,6 +36,9 @@ p {
   margin: 0.8rem;
 }
 
+.rank {
+  padding-top: 5rem;
+}
 article li {
   margin: 0.5rem;
 }
