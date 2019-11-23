@@ -1,1 +1,147 @@
+Manage guild applications
+  Does applicant qualify
+      var characterName
+      var currentRank
+      var applyRank
+      var joinDate
+      var correctiveAction
+      var correctiveActionDate
+      
+      
+      
+      Update database once per day from wow armory. Can you automate this?
+      if udateDate = currentDate do nothing
+      else update
+        checks each string against saved objects
+          if all strings = info in objects 
+            then return "No Changes"
+          else
+            add all new info to db and populate todo list for addon
+      
+      if joinDate is null then joinDate = currentDate
+      
+      object player{
+      
+      for each character:
+      
+      characterName: ""
+      characterLevel: ""
+      rank: ""
+      correctiveAction: ""{
+      
+      for each correctiveAction:
+        correctiveAction++ for assigning new correcticveAction variable name
+          var correctiveAction
+          var correctiveActionDate
+          var correctiveActionTotal
+        
+      
+      }
+      }
+      
+      
+Database of past corrective actions
+uses addon in game to write up and then populates database. Checks against previous corrective actions and give gkick if it exceedes
+more then 1 in a month.
+  var currentCorrectiveAction
+  var currentCorrectiveActionDate
+  var correctiveActionTotal
+  var activeCorrectiveActions
+  var activeCorrectiveActionsDate
+  
+  *may need diffrent dates for diffrent ranks.
+  
+  
+  
+Raid team Managment
+checks if character is araid member of the correct ilvl have gems and enchants and are above 80% attendence.
+  var gems
+  var enchants
+  var ilvl
+  var currentRank
+  var late
+  var hasConsumables
+  var donatedGuildBank
+  
+
+use raid tools export data to db.
+both attendance tab and inspect.
+
+
+<?php
+    $GLOBALS['wowarmory']['db']['driver'] = 'mysql'; // Dont change. Only mysql supported so far.
+    $GLOBALS['wowarmory']['db']['hostname'] = '127.0.0.1'; // Hostname of server. 
+    $GLOBALS['wowarmory']['db']['dbname'] = ''; //Name of your database
+    $GLOBALS['wowarmory']['db']['username'] = ''; //Insert your database username
+    $GLOBALS['wowarmory']['db']['password'] = ''; //Insert your database password
+    // Only use the two below if you have received API keys from Blizzard.
+    $GLOBALS['wowarmory']['keys']['api'] = ''; // You need the api key from Blizzard. dev.battle.net
+    $GLOBALS['wowarmory']['keys']['share'] = ''; // Currently unused
+    include('BattlenetArmory.class.php'); //include the main class 
+?>
+
+    // Load the class and define the realm and region 
+    $armory = new BattlenetArmory('EU','Defias Brotherhood'); 
+
+    // Use below if emblem doesn't work but you don't get any
+    // usable information on what the problem is.
+    // $armory->debug('emblem',TRUE)
+
+    // Enable this is if toons with special characters break the API.
+    // $armory->UTF8(TRUE);
+
+    // Set the locale. Will default back to region default if not defined. English normally.
+    // us.battle.net: en_US, es_MX
+    // eu.battle.net: en_GB, es_ES, fr_FR, ru_RU, de_DE
+    // kr.battle.net: ko_KR
+    // tw.battle.net: zh_TW
+    // battlenet.com.cn: zh_CN
+    $armory->setLocale('ru_RU');
+
+    // To reset back to default server locale
+    $armory->setLocale(FALSE);
+
+    // To exclude some fields from characters to load.
+    $armory->characterExcludeFields(array('achievements','quests')); 
+    // To reset the exclude list to not exclude anymore
+    $armory->characterExcludeFields(FALSE); 
+
+    // Load all the guild data into an object. This is NOT an array 
+    $guild = $armory->getGuild('Shadowsong'); 
+
+    // Load all the character data into an object. This is NOT an array 
+    $character = $armory->getCharacter('Growar'); 
+?>
+
+
+
+
+
+// Get an array with all members and basic information
+    $members = $guild->getMembers();
+
+// Get an array with all members and basic information sorted
+    // sort can be name|class|race|gender|level|rank
+    // sortflag can be asc | desc
+    $members = $guild->getMembers('name','asc');
+
+ // Get the character level
+    $level = $character->getLevel();
+
+// figuring out what the class is
+    var classes = {
+        1:"Warrior", 
+        2:"Paladin",
+        3:"Hunter",
+        4:"Rogue",
+        5:"Priest",
+        6:"DeathKnight",
+        7:"Shaman",
+        8:"Mage",
+        9:"Warlock",
+        10:"Monk",
+        11:"Druid",
+        12:"Demon Hunter"
+    };
+    var toon_class = classes[toon.class];
 
