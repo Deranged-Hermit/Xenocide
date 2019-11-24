@@ -10,7 +10,7 @@
 
 
 //JS
-ragImg.click(function rag(){
+ragImg.onClick(function rag(){
      if ('.twitch').hasId('m2tgtvTwitch'){
         ("div#m2gtvTwitch").replaceWith(ragTwitch)};
         
