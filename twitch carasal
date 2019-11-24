@@ -1,0 +1,51 @@
+//HTML
+
+<div class="main-container">
+  <div class="twitch" id="m2gtvTwitch"></div>
+</div>
+
+<div class="img gallery">
+  <img id='ragImg' src="" onClick=funtion(rag)>
+</div>
+
+
+//JS
+$(rag).click(function(){
+
+  var ragTwitch =
+     if $('.twitch').hasId('m2tgtvTwitch')
+        $("div#m2gtvTwitch").replaceWith(ragTwitch);
+     else $('.twitch').hasId('jackkifeTwitch')
+        $("div.twitch").replaceWith(ragTwitch);
+  });
+  
+        new Twitch.Embed("m2gtvTwitch", {
+          width: 1080,
+          height: 610,
+          channel: "m2gtv",
+          layout: "video",
+          autoplay: false
+        });
+        
+        new Twitch.Embed("ragTwitch", {
+          width: 450,
+          height: 260,
+          channel: "ragnok_bleedinghollow",
+          layout: "video",
+          autoplay: false
+        });
+        
+           new Twitch.Embed("jackkifeTwitch", {
+          width: 1080,
+          height: 610,
+          channel: "jackkife",
+          layout: "video",
+          autoplay: false
+        });
+        
+        
+        
+         embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+          var player = embed.getPlayer();
+          player.play();
+        });
