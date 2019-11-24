@@ -5,20 +5,23 @@
 </div>
 
 <div class="img gallery">
-  <img id='ragImg' src="" onClick=funtion(rag)>
+  <img id='ragImg' src="" onclick="rag()">
 </div>
 
 
 //JS
-$(rag).click(function(){
-
-  var ragTwitch =
-     if $('.twitch').hasId('m2tgtvTwitch')
-        $("div#m2gtvTwitch").replaceWith(ragTwitch);
-     else $('.twitch').hasId('jackkifeTwitch')
-        $("div.twitch").replaceWith(ragTwitch);
+ragImg.click(function rag(){
+     if ('.twitch').hasId('m2tgtvTwitch'){
+        ("div#m2gtvTwitch").replaceWith(ragTwitch)};
+        
+     else ('.twitch').hasId('jackkifeTwitch'){
+        ("div.twitch").replaceWith(ragTwitch)};
   });
   
+  //Still need to refresh page after.
+  
+  
+  //Twitch embeds, these work.
         new Twitch.Embed("m2gtvTwitch", {
           width: 1080,
           height: 610,
@@ -44,7 +47,7 @@ $(rag).click(function(){
         });
         
         
-        
+        //Twitch event listener, this works.
          embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
           var player = embed.getPlayer();
           player.play();
