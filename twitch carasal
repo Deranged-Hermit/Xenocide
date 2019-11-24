@@ -1,6 +1,6 @@
 //HTML
 
-<div class="main-container">
+<div id="main-container">
   <div class="twitch" id="m2gtvTwitch"></div>
 </div>
 
@@ -19,6 +19,7 @@ ragImg.click(function rag(){
   });
   
   //Still need to refresh page after.
+  eval(document.getElementByID("main-container").innerHTML); 
   
   
   //Twitch embeds, these work.
